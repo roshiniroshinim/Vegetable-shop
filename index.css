@@ -1,0 +1,1637 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem; font-family: 'Arial', sans-serif; 
+    
+}
+
+.nav-items {
+    list-style: none;
+}
+
+.nav-items .nav-link {
+    margin: 0 10px;
+    
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card-body {
+    padding: 20px;
+}
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    transition: width 0.4s ease;
+}
+.search input:focus {
+    width: 250px;
+}
+.search-box {
+    position:relative;
+    right: 30px;
+    cursor: pointer;
+    color:black;
+}
+.shop {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+ 
+@media (max-width: 991px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navbar .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .navbar .search {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navbar .search input {
+        width: 100%;
+    }
+
+    .navbar .shop {
+        margin-top: 1rem;
+    }
+
+    .navbar .logo {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    
+
+    .navbar .search {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar .shop {
+        margin-left: auto;
+    }
+
+    .navbar .navbar-collapse {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #f8f9fa; /* Light background for mobile */
+    }
+    .navbar-toggler-icon {
+        background-color: #000; /* Dark color for hamburger icon */
+    }
+    .logo i {
+        font-size: 1.2rem; /* Adjust icon size on mobile */
+    }
+}
+
+.login-overlay {
+        display: none; /* Initially hidden */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        z-index: 1000;
+    }
+
+    #loginForm {
+        width: 100%;
+        max-width: 300px; /* Adjust based on your design */
+        padding: 20px;
+        height: 70%;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    .card-body h5{
+        margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
+        position: relative;
+        
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    #center-button {
+        width: 70%; /* Make button full width */
+        color: white;
+        position: relative;
+        left:25px;
+        border: none;
+        bottom: 80px;
+        background-color: #28a745; /* Space out from input fields */
+    }
+    /* Overlay style to cover the entire screen */
+.overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 1000;
+}
+
+/* Registration form card style */
+#registrationForm {
+    width: 100%;
+    max-width: 360px; /* Adjust to a good size for form */
+    padding: 20px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+#registrationForm .card-title{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Form input styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+#submitBtn {
+    width: 100%; /* Make button full width */
+    padding: 10px; /* Add padding for better clickable area */
+    font-size: 16px; /* Larger text for button */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+#submitBtn:hover {
+    background-color: #0056b3; /* Darker blue when hovering */
+}
+
+/* Close button styling */
+#closeBtn {
+    width: 100%; /* Full width to match the submit button */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#closeBtn:hover {
+    background-color: #6c757d; /* Slightly darker gray when hovering */
+}
+#submit{
+    color: #fff;
+    background-color: #28a745;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    border: none;
+}
+#closeBtn{
+    color: #fff;
+    background-color:#333;
+    width: 70%;
+    position: relative;
+    left: 14%;
+    height: 40px;
+    border: none;
+}
+
+
+.image-container:hover h6 {
+    opacity: 1; 
+}
+ .image-container h6{
+    color:black;
+    background-color: #28a745;
+    width: 65%;
+    font-size: 15px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+.dom .image-container h6 i{
+    color:black;
+    font-size:13px;
+}
+.content-wrapper {
+        flex-direction:cloumn;
+        align-items: center;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    button#toggle-info {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: -1;
+}
+.carousel-caption {
+  position: absolute;
+  top: 8%;
+  right: 10%; /* Position the caption vertically */
+  color: white;
+  max-width: 400px;
+  z-index: 1; /* Ensure text is above the image */
+   /* Add shadow for better visibility */
+}
+
+.carousel-caption h6 {
+  font-size: 1.2rem;
+  align-items: center;
+  color:black;
+  right: 42%;
+  bottom: 12%;
+  position: relative;
+}
+
+.carousel-caption h6 img {
+  margin-left: 8px;
+  height: 100px;
+  width: 100px;
+}
+
+.carousel-caption h1{
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color:black;
+  position: relative;
+  right: 18%;
+  bottom: 20%;
+}
+.carousel-caption span{
+    color: #28a745;
+    max-width:300px;
+    font-size: 2.2rem;
+    position: relative;
+    bottom: 15%;
+    z-index: 1;
+}
+.carousel-caption h4 {
+  font-size: 1.2rem;
+  position: relative;
+  right: 18%;
+  bottom: 18%;
+  color:#6c757d;
+}
+
+.carousel-caption a {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background-color:#28a745; 
+  border-radius: 10px 48px;/* Primary button color */
+  color: white;
+  border: none;
+  position: relative;
+  right: 18%;
+  bottom: 10%;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-caption a:hover {
+  background-color:orange; /* Darker color on hover */
+}
+
+/* Carousel Controls (previous and next arrows) */
+.carousel-control-prev, .carousel-control-next {
+  z-index: 2; /* Ensure control buttons are above the carousel content */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #fff; /* White icon for visibility */
+}
+
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption h4 {
+    font-size: 1.1rem;
+  }
+
+  .carousel-caption .btn {
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel .carousel-item {
+    height: 380px;
+    z-index: -1;
+  }
+
+  .carousel-image {
+    object-position: center;
+  }
+
+  .carousel-caption {
+    bottom: 10px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+    z-index: -1;
+  }
+
+  .carousel-caption h6 {
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption h4 {
+    font-size: 1rem;
+  }
+
+  .carousel-caption .btn {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel .carousel-item {
+    height: 380px;
+  }
+
+  .carousel-caption {
+    bottom: 5px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption h4 {
+    font-size: 1rem;
+  }
+
+  .carousel-caption .btn {
+    padding: 5px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel .carousel-item {
+    height: 350px;
+    z-index: -1;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.1rem;
+    z-index: -1;
+  }
+
+  .carousel-caption h4 {
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption .btn {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+  }
+}
+/* About Box Styling */
+.about-box {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.about {
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the content */
+  padding: 20px;
+}
+.about h6 {
+  font-size: 1.4rem;
+  color:#28a745;
+  position: relative;
+  left: 20%;
+  top:210px;
+}
+ .about h5 {
+  font-size:2.5rem;
+  position: relative;
+  top:90px;
+  left: 20px;
+  text-align: center;
+  color:black; /* Green color */
+  position: relative;
+}
+.about span {
+  display: block;
+  font-size: 1.6rem;
+  color:black; /* Green color */
+  position: relative;
+  left: 21%;
+  top: 145px;
+}
+  .about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top:140px;
+    text-align: justify; /* Justifies the text for better readability */
+    color: #555;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    z-index: 1000;
+}
+/* Content Wrapper Styling (Image and Text) */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.about-image {
+  width: 52%;
+  max-width: 100%;
+  height:350px;
+  margin-right:47%;
+  bottom:300px;
+  position: relative;
+  border-radius: 8px; /* Rounded corners */
+}
+.content-wrapper h6 {
+  width: 50%;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  right: 40%;
+  bottom:300px;
+  position: relative;
+}
+/* Button Styling */
+button{
+  background-color:#28a745;
+  color: #fff;
+  border-radius:20px;
+  font-size:20px;
+  width: 17%;
+  position: relative;
+  bottom: 310px;
+  left:20%;
+  transition: background-color 0.3s;
+}
+#toggle-info{
+    border-radius:8px 48px;
+    border: none;
+}
+
+button:hover {
+  background-color:orange; /* Darker shade on hover */
+}
+
+    /* Styling for the Products Section */
+    .products {
+        padding: 20px;
+    }
+
+    .products h1 {
+        text-align: center;
+        font-size: 3rem;
+        position: relative;
+        bottom:50px;
+        color:black;
+    }
+
+    .main-products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+    }
+
+    .inner-products {
+        width: 270px;
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 10px;
+        height: 350px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        margin: 10px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .inner-products img {
+        width: 100%;
+        position: relative;
+        bottom: 50px;
+    }
+    .product-content h5{
+        color: white;
+        background-color: #28a745;
+        width: 30%;
+        height: 30px;
+        position: relative;
+        bottom: 30px;
+        left: 182px;
+        padding: 3px;
+        font-size: 13px;
+        border-radius: 10px 48px;
+        z-index: 1000;
+    }
+
+    .product-content h4 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        position: relative;
+        bottom: 80px;
+    }
+
+    .product-content h6 {
+        font-size: 1rem;
+        color: #6c757d;
+        position: relative;
+        bottom: 80px;
+    }
+
+    .product-content span {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #28a745;
+        position: relative;
+        bottom: 99px;
+        left: 32%;
+    }
+
+    .product-content .btn {
+        display: inline-block;
+        background-color:#28a745;
+        color: white;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        bottom: 60px;
+        right: 20px;
+        transition: background-color 0.3s;
+    }
+
+    .product-content .btn:hover {
+        background-color:orange;
+    }
+
+    /* Styling for Shopping Cart Section */
+    #cart {
+        list-style: none;
+        padding: 0;
+    }
+
+    #cart li {
+        padding: 5px 0;
+    }
+
+    #total, #item-count {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+   
+/* Bestseller Section */
+.bestseller-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+    bottom: 10px;
+}
+
+.bestseller-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    bottom: 110px;
+    position: relative;
+    color: #333;
+}
+
+.bestseller-section span {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    bottom: 100px;
+}
+
+/* Product Grid */
+.product-grid {
+display:flex;
+flex-wrap: wrap;
+gap:20px;
+padding: 0 20px;
+justify-content: space-around;
+grid-template-columns: repeat(3, 1fr);
+position: relative;
+top: 60px;   
+}
+.product-card {
+    background-color: #fff;
+    text-align: center;
+    height: 190px;
+    width: 250px;
+    gap: 10px;
+    position: relative;
+    bottom: 150px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.product-image {
+    width: 120px;
+    height:130px;
+    border: 1px solid #6c757d;
+    border-radius: 50%;
+    top: 30px;
+    position: relative;
+    margin-right: 45%;
+}
+.product-card h6 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    position: relative;
+    bottom:60%;
+    left: 21%;
+    font-weight: 600;
+}
+.star i {
+    color: #FFD700;
+    left: 25%;
+    position: relative;
+    bottom:100px;
+}
+h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 15px 0;
+    color:#28a745;
+    position: relative;
+    left: 25%;
+    bottom: 165px;
+}
+.product-card p {
+    font-size: 15px;
+    color:white;
+    height: 40px;
+    width: 47%;
+    border-radius: 20px;
+    padding-top: 4px;
+    padding-right: 10px;
+    position: relative;
+    bottom: 150px;
+    left: 49%;
+    background-color: #28a745;
+}
+.product-card p i {
+    margin-right: 2px;
+}
+/* Base Styles for Login Section */
+.login {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.login h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Page Section */
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    height: 150px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.page i {
+    font-size: 40px;
+    color:#28a745;
+    margin-bottom: 15px;
+}
+
+.page h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.page span {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Flexbox to align pages side by side */
+.login .page {
+    flex: 1;
+    max-width: 300px;
+}
+
+/* Responsive Design - Media Queries */
+
+/* For larger screens, adjust the layout to 3 columns */
+@media (min-width: 1024px) {
+    .login {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .page {
+        max-width: 30%;
+    }
+}
+
+/* For tablet screens, stack into 2 columns */
+@media (max-width: 1024px) {
+    .login {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page {
+        max-width: 45%;
+        margin: 10px;
+    }
+}
+
+/* For mobile screens, stack the items vertically */
+@media (max-width: 768px) {
+    .login {
+        display: block;
+    }
+
+    .page {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .page h4 {
+        font-size: 18px;
+    }
+
+    .page span {
+        font-size: 12px;
+    }
+}
+
+.banner-online {
+    background-color: orange;
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 900px;
+    height: 400px;
+    position: relative;
+    bottom: 80px;
+}
+.online h1{
+    color: black;
+    bottom:100px;
+    text-align: center;
+    font-size:2.5rem;
+    position: relative;
+}
+.banner-online h2 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-right: 40%;
+}
+
+.banner-online span {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: block;
+    margin-right: 40%;
+    color: black;
+}
+
+.first, .second {
+    max-width: 170px;
+    margin: 10px 20px;
+    margin-right: 40%;
+}
+/* Aligning the large image */
+.banner-online .large-image {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    max-width: 350px;
+    height: 300px;
+}
+
+/* Responsive Media Queries */
+
+/* Mobile Devices (Portrait) */
+@media (max-width: 480px) {
+    .banner-online {
+        padding: 15px;
+    }
+
+    .banner-online h2 {
+        font-size: 1.8rem;
+    }
+
+    .banner-online span {
+        font-size: 1rem;
+    }
+
+    .first, .second {
+        max-width: 120px;
+        margin: 10px;
+    }
+
+    .banner-online img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .banner-online .large-image {
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+ 
+@media (max-width: 768px) {
+    .banner-online h2 {
+        font-size: 2rem;
+    }
+
+    .banner-online span {
+        font-size: 1.1rem;
+    }
+
+    .first, .second {
+        max-width: 130px;
+    }
+
+    .banner-online .large-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+@media (min-width: 1024px) {
+    .first, .second {
+        max-width: 150px;
+    }
+
+    .banner-online .large-image {
+        max-width: 350px;
+        height: 300px;
+    }
+}
+#contact{
+position: relative;
+bottom: 60px;    
+}
+#contact h1{
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 1px black;
+}
+#contact input{
+    background-color: pink;
+    border: 2px solid black;
+}
+#contact input::placeholder{
+    color: black
+}
+#contact textarea{
+    background-color:pink;
+    border: 2px solid black;
+}
+#contact textarea::placeholder{
+    color: black
+
+}
+#messagebtn{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    position: relative;
+}
+#messagebtn button{
+    width: 200px;
+    height: 30px;
+    letter-spacing: 3px;
+    background-color: pink;
+    color:black;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+/* Product Section Styling */
+.product{
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    position: relative;
+    top:10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product h4 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.product span {
+    font-size: 1.1rem;
+    color: #4caf50;
+}
+
+.product .btn {
+    background-color: #f4c542;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    bottom: 50px;
+}
+
+.product .btn:hover {
+    background-color: #e1b02d;
+}
+.dom {
+    display: inline-block;
+    margin: 15px;
+    position: relative;
+    text-align: center;  /* To position the text over the image */
+}
+.image-container h6 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Make text fade in/out */
+}
+.image-container:hover h6 {
+    opacity: 1; /* Show text on hover */
+}
+/* Ensure that the navbar toggle button is positioned correctly on small screens */
+.navbar-toggler {
+    border: none; /* Remove border around the hamburger icon */
+    padding: 0.5rem; /* Adjust padding for better alignment */
+}
+
+/* Align the navbar links properly in the collapsed state */
+.navbar-nav {
+    text-align: right; /* Align the items to the right */
+}
+.marquee{
+    background-color: silver;
+    color:black;
+}
+#black{
+    background-color: #f4f4f4;
+}
+.icon i {
+    font-size: 50px;
+    color: orange;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+.fontsbox {
+    display: flex;
+    justify-content: center;
+}
+.icon {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: white;
+    margin-top: 50px;
+    /*box-shadow: 2px 4px 8px gray;*/
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+.icon h5 {
+    color: rgb(81, 176, 81);
+    position: relative;
+    margin-right:60%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.icon strong {
+    color: rgb(57, 54, 54);
+    position: relative;
+    bottom: 85%;
+}
+
+.set1 {
+    margin-left: 19px;
+}
+
+#newo {
+    border-radius: 12px;
+    width: 530px;
+    margin-left: 10px;
+    padding: 15px;
+    background-color: #ebf5fb;
+}
+#d1 p{
+    color: rgb(225, 220, 220);
+    font-size: 17px;
+}
+#d1 p:hover{
+    cursor: pointer;
+    color: orange;
+}
+#read{
+    width: 110px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+#read:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 5px 10px 7px gray;
+
+}
+.container-fluid{
+    position: relative;
+    bottom: 170px;
+}
+/* Cart Item Styling */
+.cart-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .cart-item img {
+        margin-right: 10px;
+    }
+    .cart-dropdown button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: red;
+        color: white;
+    }
+
+    .cart-dropdown button:hover {
+        background-color: darkred;
+    }
+
+    /* Box shadow for the cart icon */
+    #cart-icon {
+        transition: box-shadow 0.3s ease;
+        position: relative;
+        right: 20px;
+    }
+    nav{
+      background-color:seashell;
+    height: 60px;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    label.logo{
+    color:black;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 5px;
+    margin-right: 50px;
+    font-weight: bold;
+    text-align: center;
+    }
+    nav ul{
+      float: right;
+      margin-right: 20px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 15px 5px;
+    }
+    nav ul li a{
+      color:black;
+      font-size: 17px;
+      padding:10px;
+       text-decoration: none;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: 10px;
+      right: 80px;   
+    }
+    nav ul li a:hover{
+        color: #28a745;
+        text-decoration: none;
+    }
+    .search{
+      position: relative;
+      top: 0px;
+      right: 80px;
+    }
+    .search input{
+      padding: 7px 0;
+      width: 200px;
+      border: transparent;
+      border-radius: 10px;
+      padding-left: 10px;
+    }
+    @media  screen and (max-width:600px){
+      .search input{
+        right: 50px;
+        position: relative;
+        width: 90px;
+        top: 4px;
+      }
+      .search{
+        position: relative;
+        right: 1%;
+      }
+      .loginbtn h1{
+        font-size: 20px;
+        right: 40px;
+        top: 20px;
+        position: relative;
+        display: inline-block;
+      }
+      .loginbtn {
+        left:25px;
+        position: relative;
+        font-size: 8px;
+        display: inline-block;
+      }
+      
+    }
+   
+    .arrow-up{
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right:  20px solid transparent;
+      border-bottom: 20px solid white;
+      position: relative;
+      top: 24px;
+      right: 46px;
+      display: none;
+    }
+    .loginbtn:hover form{
+      display: table;
+    }
+    .loginbtn:hover .arrow-up{
+      display: table;
+    }
+    .login{
+      background:white;
+      text-align: center;
+      color: black;
+      height: 40px;
+      width: 120px;
+      font-size: 20px;
+      z-index: -1000;
+    }
+    .checkbtn{
+      font-size: 30px;
+      color:black;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      z-index: 1000;
+      display: none;
+      cursor: pointer;
+
+    }
+    #check{
+      display: none;
+      
+    }
+    @media (max-width:952px){
+      label.logo{
+        font-size: 30px;
+        padding-left: 10px;
+      }
+      nav ul li a{
+        font-size: 16px;
+      }
+    }
+    @media (max-width:858px){
+      .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        color:black;
+        top: 60px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+        z-index:1;
+      }
+      nav ul li{
+        display: block;
+        margin: 20px 0;
+        line-height:10px;
+        z-index: -1;
+      }
+      nav ul li a{
+        font-size: 20px;
+      }
+      a:hover,a.active{
+        background: none;
+        color: #0082e6;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+    }
+
+/* Cart Dropdown */
+#cart-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    margin-right: 10px;}
+    /* General Styles for Gallery Section */
+.domain {
+    padding: 40px 20px;
+    text-align: center;
+    /*background-color: #f9f9f9;*/
+}
+
+.domain h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Container for images */
+.dom {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+/* Styling for each image container */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container h6 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color:black;
+    background-color: #28a745;
+    padding: 10px;
+    margin: 0;
+    display: none; /* Hide by default */
+    transition: opacity 0.3s ease;
+}
+
+.image-container h6 i{
+color: #000;
+margin-left: 120px;
+position: relative;
+bottom: 22px;
+}
+/* Hover Effect - Show text and zoom image */
+.image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container:hover h6 {
+    display: block;
+    opacity: 1; /* Show the text when hovering */
+}
+
+/* Responsive Design - Media Queries */
+
+/* For mobile screens, make sure everything scales properly */
+@media (max-width: 768px) {
+    .domain h2 {
+        font-size: 28px;
+    }
+
+    .image-container {
+        max-width: 100%;
+    }
+
+    .image-container h6 {
+        font-size: 16px;
+    }
+}
+/* container card 4  */
+
+.img-item {
+    position: relative;
+}
+
+.para {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    text-align: center;
+    background-color: rgb(22, 125, 22);
+    width: 190px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+#border {
+    border: 1px solid orange;
+}
+.container-fluid{
+    position: relative;
+    bottom:10px;
+    /*background-color: rgb(121,153,181);*/
+}
+#d1 p{
+    color:white;
+    font-size: 17px;
+}
+#d1 p:hover{
+    cursor: pointer;
+    color: orange;
+}
+#read{
+    width: 110px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+#read:hover{
+    color: black;
+    box-shadow: 5px 10px 7px gray;
+
+}  
+.badge{
+    color: black;
+    background-color: red;
+    margin-bottom: 10px;
+    position: relative;
+    right:13px;
+    height: 14px;
+    font-size: 8px;
+    width:15px;
+    bottom: 12px;
+    border-radius: 50%;
+}
+.container my-5{
+    position: relative;
+    bottom: 200px;
+}
+#feature{
+    position: relative;
+    bottom: 200px;
+}
+#one{
+    position: relative;
+    bottom: 160px;
+}
+    .custom-border {
+        border: 2px solid black; /* Adjust thickness */
+        border-radius: 50%; /* Ensure circular shape */}
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: transparent !important;
+            color: black;
+        }
+    
+        /* Optional: If you want to ensure that there is no hover effect, you can also disable focus styles */
+        .carousel-control-prev:focus,
+        .carousel-control-next:focus {
+            box-shadow: none;
+        }
+#popular{
+    top: 50px;
+    position: relative;
+}
+.banner {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+    position: relative;
+    bottom: 50px;
+  }
+
+  .banner h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .banner-border {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .banner-box {
+    width: 290px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+
+  .banner-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .banner-box h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #555;
+  }
+
+  .banner-box .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0d6efd;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .banner-box .btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .banner-border {
+      flex-direction: column;
+    }
+    .banner-box {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+#footer{
+    position: relative;
+    top: 50px;
+}
